@@ -26,22 +26,22 @@ async function update() {
 
   const data = await res.json();
 
-  // Normalize -> [{ rank, username, wagered }]
-  const sorted = (Array.isArray(data) ? data : [])
+  // Sort by wager, take top 10, then normalize -> [{ rank, username, wagered }]
+  const top10 = (Array.isArray(data) ? data : [])
     .map((u) => ({
-      user_id: u.user_id,
       user_name: u.user_name ?? "hidden",
       total_wager_usd: Number(u.total_wager_usd ?? 0),
     }))
     .sort((a, b) => b.total_wager_usd - a.total_wager_usd)
+    .slice(0, 10)
     .map((u, i) => ({
       rank: i + 1,
       username: u.user_name,
       wagered: u.total_wager_usd,
     }));
 
-  fs.writeFileSync("./public/leaderboard.json", JSON.stringify(sorted, null, 2));
-  console.log(`Leaderboard updated. Rows: ${sorted.length}`);
+  fs.writeFileSync("./public/leaderboard.json", JSON.stringify(top10, null, 2));
+  console.log(`Leaderboard updated. Rows: ${top10.length}`);
 }
 
 update().catch((e) => {

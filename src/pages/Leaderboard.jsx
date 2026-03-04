@@ -50,8 +50,8 @@ export default function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // same logic as your HTML: END_AT = now + 36h (demo)
-  const endAt = useMemo(() => Date.now() + 36 * 60 * 60 * 1000, []);
+
+const endAt = useMemo(() => Date.UTC(2026, 3, 1, 0, 0, 0), []);
   const [t, setT] = useState({ dd: "00", hh: "00", mm: "00", ss: "00", tick: false });
 
   // countdown tick
