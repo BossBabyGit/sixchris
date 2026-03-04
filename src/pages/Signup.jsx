@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Toast from "../components/Toast";
 
-const CODE = "sixchris";
+const CODE = "six";
 
 export default function Signup() {
   const [toast, setToast] = useState({ show: false, text: "" });
@@ -320,7 +320,7 @@ export default function Signup() {
               </button>
             </div>
 
-            <button className="btn-main" onClick={() => window.open("#", "_blank")}>
+            <button className="btn-main" onClick={() => window.open("https://join.bitfortune.com/six", "_blank")}>
               Sign Up at BitFortune →
             </button>
           </div>

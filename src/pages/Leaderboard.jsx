@@ -14,7 +14,7 @@ const LEADERBOARD = [
   { rank: 10, username: "Xe****n", wagered: 8300.0, prize: 150, avatarSeed: "Kappa" },
 ];
 
-const CODE = "sixchris";
+const CODE = "six";
 
 // matches your current behavior (static single avatar file)
 const AVATAR_URL = () => "/1.jpg";
@@ -93,7 +93,7 @@ export default function Leaderboard() {
         <section className="hero">
           <h1>$5000 BitFortune Leaderboard</h1>
           <p className="sub">
-            Compete in my Monthly Leaderboard and win huge prizes. Only eligible for code <b>{CODE}</b> users.
+            Compete in my Monthly Leaderboard and win huge prizes. Only eligible for users that signup via my link.
           </p>
           <p className="sub">Wagering on dice is prohibited!</p>
 
@@ -111,10 +111,16 @@ export default function Leaderboard() {
 
           <div className="code">
             Code: <b>{CODE}</b>
-            <button className="btn-copy" onClick={copyCode} aria-label="Copy referral code">
-              Copy
-            </button>
-          </div>
+
+            <a
+                href={`https://join.bitfortune.com/six`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-copy"
+            >
+                Sign Up
+            </a>
+            </div>
         </section>
 
         <section className="podium" aria-label="Top 3 players">
