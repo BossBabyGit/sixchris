@@ -957,3 +957,17 @@ footer {
     display: none;
   }
 }
+
+.btn-copy {
+  text-decoration: none;
+}
+
+.signup-link {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
