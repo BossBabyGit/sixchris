@@ -2,7 +2,7 @@
   {
     "rank": 1,
     "username": "Jstone",
-    "wagered": 172257.27
+    "wagered": 172407.67
   },
   {
     "rank": 2,
@@ -17,12 +17,12 @@
   {
     "rank": 4,
     "username": "LennDegens",
-    "wagered": 26373.77
+    "wagered": 26424.17
   },
   {
     "rank": 5,
     "username": "Bonejeezy",
-    "wagered": 26007.51
+    "wagered": 26075.31
   },
   {
     "rank": 6,
@@ -36,17 +36,17 @@
   },
   {
     "rank": 8,
+    "username": "Valordreams",
+    "wagered": 12512.15
+  },
+  {
+    "rank": 9,
     "username": "FarmerChronic",
     "wagered": 12025.48
   },
   {
-    "rank": 9,
+    "rank": 10,
     "username": "RubixRefs",
     "wagered": 11025.25
-  },
-  {
-    "rank": 10,
-    "username": "Yuchiffu",
-    "wagered": 9382.67
   }
 ]
