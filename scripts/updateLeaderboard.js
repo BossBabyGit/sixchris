@@ -2,8 +2,8 @@ import fs from "fs";
 
 // March 2026 UTC range:
 // 2026-03-01 00:00:00 UTC -> 2026-04-01 00:00:00 UTC
-const FROM = 1772323200;
-const TO = 1775001600;
+const FROM = 1775001600; // April 1, 2026 00:00:00 UTC
+const TO   = 1777593600; // May 1, 2026 00:00:00 UTC
 
 const API_KEY = process.env.BITFORTUNE_API_KEY;
 
