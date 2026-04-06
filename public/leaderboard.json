@@ -2,12 +2,12 @@
   {
     "rank": 1,
     "username": "Jstone",
-    "wagered": 76531.63
+    "wagered": 77500.73
   },
   {
     "rank": 2,
     "username": "Lambo99",
-    "wagered": 25065.56
+    "wagered": 25066.81
   },
   {
     "rank": 3,
@@ -32,21 +32,21 @@
   {
     "rank": 7,
     "username": "Wumbo",
-    "wagered": 2021.69
+    "wagered": 2021.86
   },
   {
     "rank": 8,
+    "username": "LowKeyCarver",
+    "wagered": 971.8
+  },
+  {
+    "rank": 9,
     "username": "Babyyodagirl",
     "wagered": 858.91
   },
   {
-    "rank": 9,
+    "rank": 10,
     "username": "DiceDad",
     "wagered": 441.53
-  },
-  {
-    "rank": 10,
-    "username": "LowKeyCarver",
-    "wagered": 408
   }
 ]
