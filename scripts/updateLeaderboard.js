@@ -1,8 +1,8 @@
 import fs from "fs";
 
 // Race window (UTC): 2026-04-01 -> 2026-05-01
-const START_DATE = "2026-04-01";
-const END_DATE = "2026-05-01";
+const START_DATE = "2026-07-24";
+const END_DATE = "2026-08-24";
 
 const AFFILIATE_CODE = "sixchris";
 const API_KEY = process.env.LUXDROP_API_KEY;
