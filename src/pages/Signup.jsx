@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Toast from "../components/Toast";
 
-const CODE = "six";
+const CODE = "sixchris";
 
 export default function Signup() {
   const [toast, setToast] = useState({ show: false, text: "" });
@@ -55,7 +55,7 @@ export default function Signup() {
               </div>
               <h2>Create Your Account</h2>
               <p>
-                Head over to BitFortune and click the <strong>Sign Up</strong> button. Fill in your details to get your
+                Head over to Luxdrop and click the <strong>Sign Up</strong> button. Fill in your details to get your
                 account created in seconds. Make sure you use a valid email so you can verify your account right away.
               </p>
               <div className="step-badge">
@@ -64,7 +64,7 @@ export default function Signup() {
                     height="14"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="rgba(227,185,61,.8)"
+                    stroke="rgba(28,178,255,.8)"
                     strokeWidth="2"
                 >
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -72,7 +72,7 @@ export default function Signup() {
                 </svg>
 
                 <a
-                    href="https://join.bitfortune.com/six"
+                    href="https://luxdrop.com/r/sixchris"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="signup-link"
@@ -80,6 +80,10 @@ export default function Signup() {
                     Sign up here
                 </a>
                 </div>
+              <div className="code-strip">
+                Use code <b>{CODE}</b> at signup for your bonus
+                <button className="btn-copy" onClick={copyCode}>Copy</button>
+              </div>
             </div>
 
             <div className="step-img">
@@ -92,7 +96,7 @@ export default function Signup() {
                       height="26"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="rgba(227,185,61,.9)"
+                      stroke="rgba(28,178,255,.9)"
                       strokeWidth="1.8"
                     >
                       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -127,12 +131,12 @@ export default function Signup() {
               </div>
               <h2>Make Your First Deposit</h2>
               <p>
-                Head to the cashier and make your first deposit using any of the supported payment methods. BitFortune
+                Head to the cashier and make your first deposit using any of the supported payment methods. Luxdrop
                 supports crypto and other methods for fast, easy funding. Even a small deposit gets you on the board and
                 competing.
               </p>
               <div className="step-badge">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(227,185,61,.8)" strokeWidth="2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(28,178,255,.8)" strokeWidth="2">
                   <line x1="12" y1="1" x2="12" y2="23" />
                   <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                 </svg>
@@ -150,7 +154,7 @@ export default function Signup() {
                       height="26"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="rgba(227,185,61,.9)"
+                      stroke="rgba(28,178,255,.9)"
                       strokeWidth="1.8"
                     >
                       <line x1="12" y1="1" x2="12" y2="23" />
@@ -185,12 +189,12 @@ export default function Signup() {
               </div>
               <h2>Start Playing &amp; Climb the Board</h2>
               <p>
-                Now the fun starts. Play any eligible games on BitFortune and your wager total will automatically count
+                Now the fun starts. Play any eligible games on Luxdrop and your wager total will automatically count
                 toward the monthly leaderboard. The more you wager, the higher you climb. Top spots win up to{" "}
-                <strong style={{ color: "var(--gold)" }}>$2,000</strong> every month.
+                <strong style={{ color: "var(--green)" }}>$2,000</strong> every month.
               </p>
               <div className="step-badge">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(227,185,61,.8)" strokeWidth="2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(28,178,255,.8)" strokeWidth="2">
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
                 Top 10 win prizes every month
@@ -206,7 +210,7 @@ export default function Signup() {
                       height="26"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="rgba(227,185,61,.9)"
+                      stroke="rgba(28,178,255,.9)"
                       strokeWidth="1.8"
                     >
                       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -215,7 +219,7 @@ export default function Signup() {
 
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, width: 140 }}>
                     {[
-                      { n: "#1", bg: "rgba(227,185,61,.25)", br: "rgba(227,185,61,.4)", bar: "rgba(227,185,61,.35)" },
+                      { n: "#1", bg: "rgba(28,178,255,.25)", br: "rgba(28,178,255,.4)", bar: "rgba(28,178,255,.35)" },
                       { n: "#2", bg: "rgba(255,255,255,.07)", br: "rgba(255,255,255,.10)", bar: "rgba(255,255,255,.12)" },
                       { n: "#3", bg: "rgba(255,255,255,.07)", br: "rgba(255,255,255,.10)", bar: "rgba(255,255,255,.08)" },
                     ].map((x) => (
@@ -230,7 +234,7 @@ export default function Signup() {
                             display: "grid",
                             placeItems: "center",
                             fontSize: 9,
-                            fontFamily: "'Allerta Stencil',sans-serif",
+                            fontFamily: "'Poppins',sans-serif",
                           }}
                         >
                           {x.n}
@@ -255,12 +259,17 @@ export default function Signup() {
           <div className="cta-box">
             <h2>Ready to Start?</h2>
             <p>
-              Sign up at BitFortune, use my link, and you&apos;re in the
-              running for this month&apos;s $5,000 prize pool.
+              Sign up at Luxdrop, use my link, and you&apos;re in the
+              running for this month&apos;s $2,000 prize pool.
             </p>
 
-            <button className="btn-main" onClick={() => window.open("https://join.bitfortune.com/six", "_blank")}>
-              Sign Up at BitFortune →
+            <div className="code-strip">
+              Code: <b>{CODE}</b>
+              <button className="btn-copy" onClick={copyCode}>Copy</button>
+            </div>
+
+            <button className="btn-main" onClick={() => window.open("https://luxdrop.com/r/sixchris", "_blank")}>
+              Sign Up at Luxdrop →
             </button>
           </div>
         </div>

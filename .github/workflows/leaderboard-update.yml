@@ -26,7 +26,7 @@ jobs:
       - name: Run script
         run: node scripts/updateLeaderboard.js
         env:
-          BITFORTUNE_API_KEY: ${{ secrets.BITFORTUNE_API_KEY }}
+          LUXDROP_API_KEY: ${{ secrets.LUXDROP_API_KEY }}
 
       - name: Commit & push leaderboard.json
         run: |
