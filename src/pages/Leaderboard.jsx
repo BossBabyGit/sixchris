@@ -50,7 +50,7 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true);
 
 
-const endAt = useMemo(() => Date.UTC(2026, 8, 24, 0, 0, 0), []);
+const endAt = useMemo(() => Date.UTC(2026, 7, 24, 0, 0, 0), []);
   const [t, setT] = useState({ dd: "00", hh: "00", mm: "00", ss: "00", tick: false });
 
   // countdown tick
